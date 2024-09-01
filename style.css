@@ -79,6 +79,45 @@ a{
 }
 
 
+.navfold{
+    height: 190vh;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    z-index: 9;
+    left: -100%;
+    transition: all ease 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3vw;
+    padding: 4vw;
+}
+
+
+.navfold h1{
+    text-transform: uppercase;
+}
+
+.navfold h1:hover{
+    color: #BA181B;
+    scale: 0.12;
+}
+.navfold h1:first-child{
+    margin-top:80vh;
+}
+
+#close{
+    font-size:10vw ;
+    position: absolute;
+    right: 12%;
+    top: 50%;
+}
+
+
+
+
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  */
 
 .hero-section{

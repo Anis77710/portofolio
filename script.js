@@ -86,8 +86,23 @@ function gooeyEffect(){
 }
 
 
+let fold =  document.querySelector('.navfold')
+let menuI =  document.querySelector('.nav>i')
+function foldnav(){
+
+ menuI.addEventListener('click', () => {
+  fold.style.left = 0;  
+})
+
+
+document.querySelector('#close').addEventListener('click', () => {
+  fold.style.left = "-100%"
+})
+}
+
 
 heroAnimation();
 about();
 gooeyEffect();
+foldnav();
 
