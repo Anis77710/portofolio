@@ -1,0 +1,692 @@
+@font-face {
+    font-family: gilroy;
+    src: url(/ass/Gilroy-Bold.ttf);
+}
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: gilroy;
+}
+html,body{
+height: 100%;
+width: 100%;
+background-color: #F5F3F4;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+}
+
+.main{
+    position: relative;
+}
+
+.page1{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color: #F5F3F4;
+}
+
+.nav{
+    height: 10vh;
+    width: 100%;
+    /* background-color: red; */
+    /* border-bottom: 2px solid red; */
+    padding:1.5vw 3vw 1.5vw 2.3vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav i{
+    display: none;
+}
+
+.nav1{
+    cursor: pointer;
+}
+.nav1 img{
+    mix-blend-mode: multiply;
+}
+
+.nav2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5vw;
+}
+
+.nav2 a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.3vw;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    padding: 0.6vw 0.9vw;
+    border-radius: 50px;
+    transition: all ease 0.4s;
+    cursor: pointer;
+    }
+
+.nav2 a:hover{
+    background-color: #BA181B;
+    color: white;
+}
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  */
+
+.hero-section{
+    height: 90vh;
+    width: 100%;
+    /* background-color: red; */
+    padding-top:2vw;
+    position: relative;
+}
+
+.hero-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero-content>h1{
+    font-size: 2.9vw;
+    text-transform: uppercase;
+    margin-top: 1.5vw;
+}
+.hero-content>h3{
+    font-size: 1.5vw;
+    margin-top: 0.8vw;
+    color: rgb(110, 108, 108);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    width: 38%;
+    text-align: center;
+}
+
+.hero-content span{
+    color: #BA181B;
+}
+
+.hero-img{
+    height: 22vw;
+    width: 22vw;
+    border-radius: 50%;
+    /* background-color: black; */
+    overflow: hidden;
+    border: 2px solid black;
+    animation: anim 65s infinite;
+}
+
+@keyframes anim {
+	0%,
+	100% {
+		border-radius: 50% 70% 70% 50% / 50% 52% 48% 70%;
+		
+	}
+
+	10% {
+		border-radius: 50% 50% 20% 80% / 25% 80% 20% 75%;
+	}
+
+	20% {
+		border-radius: 67% 33% 47% 53% / 37% 20% 80% 63%;
+	}
+
+	30% {
+		border-radius: 39% 61% 47% 53% / 37% 40% 60% 63%;
+		
+	}
+
+	40% {
+		border-radius: 39% 61% 82% 18% / 74% 40% 60% 26%;
+	}
+
+	50% {
+		border-radius: 100%;
+		
+	}
+
+	60% {
+		border-radius: 50% 50% 53% 47% / 72% 69% 31% 28%;
+	}
+
+	70% {
+		border-radius: 50% 50% 53% 47% / 26% 22% 78% 74%;
+
+	}
+
+	80% {
+		border-radius: 50% 50% 53% 47% / 26% 69% 31% 74%;
+	}
+
+	90% {
+		border-radius: 20% 80% 20% 80% / 20% 80% 20% 80%;
+	}
+}
+
+.hero-img img{
+    height: 100%;
+    width: 90%;
+    object-fit: cover;
+}
+
+.hero-icons{
+    font-size: 2.8vw;
+    margin-top: 2vw;
+}
+
+.hero-content i{
+    margin-left: 1vw;
+    color: gray;
+    transition: all ease 0.3s;
+}
+.hero-content #github:hover{
+    color: black;
+}
+.hero-content #linkedin:hover{
+    color: #0275B4;
+}
+
+.tech-stack{
+    height: 30vh;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 3vw;
+    
+}
+
+.tech-stack>h1{
+    color: grey;
+    font-size: 2.3vw;
+    text-transform: uppercase;
+}
+
+.frontend{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4vw;
+}
+
+.frontend img{
+    height: 4vw;
+    width: 4vw;
+    object-fit: cover;
+}
+
+
+
+/* >>>>>>>>>>>   page2   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  */
+
+.page2{
+    height: 85vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:3vw;
+    margin-top: 20vh;
+}
+
+.about{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.about-art{
+    mix-blend-mode: multiply;
+    height: 88%;
+    width: 37%;
+}
+
+.about-art video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.about-me{
+    height: 100%;
+    width: 55%;
+}
+
+.about-me>h1{
+    font-size: 4vw;
+    text-transform: uppercase;
+    text-align: center;
+    -webkit-text-stroke: 1px black;
+    color: transparent;
+    transition: all ease 0.5s;
+}
+
+.about-me h1:hover{
+    color: black;
+}
+
+.about-me span{
+    text-transform: uppercase;
+    color: #BA181B;
+    font-size: 2.6vw;
+}
+
+.about-me>h2{
+    text-align: center;
+    margin-bottom: 2.5vw;
+    font-size: 2vw;
+    color: #0B090A;
+    font-weight: 600;
+}
+
+.about-me>h2:nth-child(2){
+    text-align: center;
+    margin-bottom: 1.5vw;
+    color: grey;
+    font-size: 2.1vw;
+}
+
+
+
+
+.page3{
+   min-height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 4vw;
+}
+
+.page3>h1{
+    font-size: 4vw;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 3vw;
+}
+
+
+.project{
+  height: 23vw;
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3vw;
+  margin-bottom: 9vh;
+  
+}
+
+.project-img{
+    height: 100%;
+    width: 47%;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-img img{
+    height: 80%;
+    width:95%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.project-info h1{
+    font-size: 3vw;
+    margin-bottom: 0.8vw;
+}
+
+.project-info{
+    width: 40%;
+    font-weight: 100;
+}
+
+.project-info button{
+    margin-top: 1.5vw;
+    padding: 0.5vw 1.5vw;
+    font-size: 1.8vw;
+    border-radius: 10px;
+    border: 2px solid black;
+    text-transform: capitalize;
+    transition: all ease 0.5s;
+}
+
+.project-info button a{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.project-info button:hover{
+    background-color: #0B090A;
+}
+
+.project-info button:hover a{
+    color: white;
+}
+
+._canvas_container{
+    z-index: 9999 !important;
+    pointer-events: none;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  */
+.page4{
+    height: 40vh;
+    width: 100%;
+    padding: 3vw;
+    position: relative;
+}
+
+.social-media{
+    display: flex;
+    align-items: center;
+    gap: 5vw;
+    margin-top: 3vw;
+}
+
+.social-media i{
+    font-size: 3vw;
+    transition: all ease 0.4s;
+}
+
+.social-media i:hover{
+    color: #0275B4;
+}
+
+.email{
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+
+.email i{
+    padding: 1vw;
+    border-radius: 50%;
+    font-size: 2.6vw;
+    box-shadow: 1px 1px 8px rgba(0,0,0,0.2);
+}
+
+.add h3{
+    color: #BA181B;
+}
+
+footer{
+    height: 20vh;
+    width: 100%;
+    background-color: #0B090A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer h3{
+    font-size: 2vw;
+    color: white;
+}
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  */
+
+@media (max-width: 600px) {
+
+    .main{
+        background-color: #F5F3F4;
+    }
+       
+    .page1{
+        height: 56.6vh;
+    }
+    
+    .nav1 img{
+       height: 7vh;
+    }
+
+    .nav i{
+        display: block;
+        font-size: 5vw;
+        font-weight: 500;
+    }
+    
+    .nav2{
+        display: none;
+    }
+
+    /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  */
+    
+ .hero-section{
+    margin-top: 15vh;
+ }
+    
+    .hero-content>h1{
+        margin-top: 3vh;
+        font-size: 5vw;
+    }
+    .hero-content>h3{
+        font-size: 3.5vw;
+        width: 65%;
+    }
+    
+ 
+    
+    .hero-img{
+        height: 50vw;
+        width: 50vw;
+    }
+    
+    
+    .hero-icons{
+        font-size: 4.8vw;
+        margin-top: 2vw;
+    }
+    
+    .tech-stack{
+        height: fit-content;
+        width: 100%;
+        /* background-color: red; */
+        position: relative;
+        top: 35%;
+    }
+    
+    .tech-stack>h1{
+        display: none;
+    }
+    
+    .frontend{
+        justify-content: center;
+        gap: 3vw;
+        flex-direction: row;
+        margin-left: -1.7vw;
+    }
+
+    .frontend img{
+        height: 5.5vw;
+        width: 5.5vw;
+        object-fit: cover;
+    }
+
+    .frontend::before{
+        content: "tech-stack: ";
+        text-transform: uppercase;
+        font-size: 3vw;
+        color: grey;
+        margin-left: -5vw;
+    }
+    
+
+
+    /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  */
+    
+    .page2{
+        height: 43vh;
+        background-color: #F5F3F4;
+        align-items: start;
+        padding-top: 110vw;
+    }
+    
+    .about-art{
+        display: none;
+    }
+
+    .about{
+        height: 100%;
+        width: 100%;
+        position: relative;
+    }
+    
+    .about-me{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .about-me>h1{
+        font-size: 6vw;
+     margin-bottom: 2vw;
+    }
+  
+    
+    .about-me>h2{
+        font-size: 3.2vw;
+        width: 85%;
+        margin-left: 8vw;
+
+    }
+    
+    .about-me>h2:nth-child(2){
+        font-size: 3vw;
+    }
+
+
+    /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  */
+
+
+    .page3{
+        min-height: 100vh;
+        width: 100%;
+        margin-top: 10vh;
+}
+     
+     
+     .project{
+       height: 50vw;
+       width: 100%;
+       /* background-color: red; */
+       display: flex;
+       justify-content: center;
+       flex-direction: column;
+       margin-bottom: 4vh;
+       gap: 2vh;
+       position: relative;
+       
+     }
+     
+     .project-img{
+         height: 100%;
+         width: 100%;
+         position: relative;
+         overflow: hidden;
+     }
+     
+ 
+     
+     .project-info h1{
+        display: none;
+     }
+
+     .project-info h3{
+        display: none;
+     }
+     
+     .project-info{
+         width: 100%;
+         font-weight: 100;
+     }
+     
+     .project-info button{
+         margin-top: .5vw;
+         font-size: 4vw;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+     }
+    
+    .project-img {
+        order: 1; 
+        flex: 1; 
+    }
+    
+    .project-info {
+        order: 2; 
+    }
+    
+    
+ /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  */
+
+
+    .page4{
+        height: 30vh;
+    }
+    .page4>h1{
+        font-size: 8vw;
+    }
+    
+
+    
+    .social-media i{
+        font-size: 8vw;
+    }
+    
+    
+    .email{
+        left: -6%;
+        top: 50%;
+        display: flex;
+        align-items: start;
+        gap: 2vw;
+        margin-top: 2vh;
+    }
+
+    .email h2{
+        display: none;
+    }
+    
+    .email i{
+        padding: 1vw;
+        border-radius: 50%;
+        font-size: 6vw;
+        box-shadow: 1px 1px 12px rgba(0,0,0,0.2);
+    }
+    
+    footer{
+        height: 10vh;
+    }
+    
+    footer h3{
+        font-size: 3vw;
+        color: white;
+    }
+
+    
+    
+
+}
